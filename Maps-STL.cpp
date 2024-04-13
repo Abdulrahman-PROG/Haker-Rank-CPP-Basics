@@ -1,12 +1,11 @@
-#include <cmath>
-#include <map>
-#include <vector>
-#include <iostream>
-#include <algorithm>
+#include <bits/stdc++.h>
 using namespace std;
-
+#define e "\n"
+#define ll long long
+#define FAST ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 
 int main() {
+    FAST;
     map<string,int> m;
     int n;
     cin>>n;
@@ -26,7 +25,7 @@ int main() {
         }
         else{
             cin>>x;
-            cout<<m[x]<<endl;
+            cout<<m[x]<<e;
         }
     }
     return 0;
