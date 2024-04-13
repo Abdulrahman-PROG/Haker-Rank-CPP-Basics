@@ -1,12 +1,10 @@
-#include <cmath>
-#include <cstdio>
-#include <vector>
-#include <iostream>
-#include <algorithm>
+#include <bits/stdc++.h>
 #include <cassert>
 using namespace std;
+#define e "\n"
+#define ll long long
+#define FAST ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 
- #define cin ios_base::sync_with_stdio(false);cin.tie(NULL); cin
 template <class T>
 class AddElements{
     T x;
@@ -24,6 +22,7 @@ class AddElements<string>{
 };
 
 int main () {
+ FAST;
   int n,i;
   cin >> n;
   for(i=0;i<n;i++) {
@@ -33,19 +32,19 @@ int main () {
         double element1,element2;
         cin >> element1 >> element2;
         AddElements<double> myfloat (element1);
-        cout << myfloat.add(element2) << endl;
+        cout << myfloat.add(element2) << e;
     }
     else if(type == "int") {
         int element1, element2;
         cin >> element1 >> element2;
         AddElements<int> myint (element1);
-        cout << myint.add(element2) << endl;
+        cout << myint.add(element2) << e;
     }
     else if(type == "string") {
         string element1, element2;
         cin >> element1 >> element2;
         AddElements<string> mystring (element1);
-        cout << mystring.concatenate(element2) << endl;
+        cout << mystring.concatenate(element2) << e;
     }
   }
   return 0;
