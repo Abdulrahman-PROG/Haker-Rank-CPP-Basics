@@ -1,5 +1,8 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
+#define e "\n"
+#define ll long long
+#define FAST ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 
 enum class Fruit { apple, orange, pear };
 enum class Color { red, green, orange };
@@ -40,6 +43,7 @@ struct Traits<Fruit> {
 };
 
 int main() {
+    FAST;
     int t;
     cin >> t;
 
@@ -47,7 +51,7 @@ int main() {
         int index1, index2;
         cin >> index1 >> index2;
         cout << Traits<Color>::name(index1) << " ";
-        cout << Traits<Fruit>::name(index2) << "\n";
+        cout << Traits<Fruit>::name(index2) << e;
     }
 
     return 0;
