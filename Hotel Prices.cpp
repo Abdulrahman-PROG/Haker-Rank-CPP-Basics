@@ -1,7 +1,8 @@
-#include <iostream>
-#include <vector>
-
+#include <bits/stdc++.h>
 using namespace std;
+#define e "\n"
+#define ll long long
+#define FAST ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 
 class HotelRoom {
 public:
@@ -33,6 +34,7 @@ public:
 };
 
 int main() {
+    FAST;
     int n;
     cin >> n;
     vector<HotelRoom*> rooms;
@@ -52,7 +54,7 @@ int main() {
     for (auto room : rooms) {
         total_profit += room->get_price();
     }
-    cout << total_profit << endl;
+    cout << total_profit << e;
 
     for (auto room : rooms) {
         delete room;
