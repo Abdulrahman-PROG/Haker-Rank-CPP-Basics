@@ -1,8 +1,13 @@
-#include <iostream>
+#include <bits/stdc++.h>
 #include <iomanip> 
 using namespace std;
+#define e "\n"
+#define ll long long
+#define FAST ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
+
 
 int main() {
+  FAST;
   int T; cin >> T;
   cout << setiosflags(ios::uppercase);
   cout << setw(0xf) << internal;
@@ -11,18 +16,14 @@ int main() {
     double B; cin >> B;
     double C; cin >> C;
 
-   
-        // LINE 1 
-        cout << hex << left << showbase << nouppercase; // formatting
-        cout << (long long) A << endl; // actual printed part
+           cout << hex << left << showbase << nouppercase; 
+        cout << (long long) A << endl; 
+    
+        cout << dec << right << setw(15) << setfill('_') << showpos << fixed << setprecision(2); 
+        cout << B << endl; 
 
-        // LINE 2
-        cout << dec << right << setw(15) << setfill('_') << showpos << fixed << setprecision(2); // formatting
-        cout << B << endl; // actual printed part
-
-        // LINE 3
-        cout << scientific << uppercase << noshowpos << setprecision(9); // formatting
-        cout << C << endl; // actual printed part
+        cout << scientific << uppercase << noshowpos << setprecision(9); 
+        cout << C << endl; 
 
   }
   return 0;
