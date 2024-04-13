@@ -1,7 +1,12 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
+#define e "\n"
+#define ll long long
+#define FAST ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
+
 
 int main() {
+    FAST;
     int start, end;
     cin >> start >> end;
 
@@ -9,37 +14,37 @@ int main() {
         if (i >= 1 && i <= 9) {
             switch (i) {
                 case 1:
-                    cout << "one" << endl;
+                    cout << "one" << e;
                     break;
                 case 2:
-                    cout << "two" << endl;
+                    cout << "two" << e;
                     break;
                 case 3:
-                    cout << "three" << endl;
+                    cout << "three" << e;
                     break;
                 case 4:
-                    cout << "four" << endl;
+                    cout << "four" << e;
                     break;
                 case 5:
-                    cout << "five" << endl;
+                    cout << "five" << e;
                     break;
                 case 6:
-                    cout << "six" << endl;
+                    cout << "six" << e;
                     break;
                 case 7:
-                    cout << "seven" << endl;
+                    cout << "seven" << e;
                     break;
                 case 8:
-                    cout << "eight" << endl;
+                    cout << "eight" << e;
                     break;
                 case 9:
-                    cout << "nine" << endl;
+                    cout << "nine" << e;
                     break;
             }
         } else if (i % 2 == 0) {
-            cout << "even" << endl;
+            cout << "even" << e;
         } else {
-            cout << "odd" << endl;
+            cout << "odd" << e;
         }
     }
 
