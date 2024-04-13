@@ -1,8 +1,11 @@
-#include <iostream>
-#include <string>
+#include <bits/stdc++.h>
 #include <sstream>
 #include <exception>
 using namespace std;
+#define e "\n"
+#define ll long long
+#define FAST ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
+
 
 class BadLengthException {
     private: 
@@ -33,6 +36,7 @@ bool checkUsername(string username) {
 }
 
 int main() {
+    FAST;
     int T; cin >> T;
     while(T--) {
         string username;
@@ -40,12 +44,12 @@ int main() {
         try {
             bool isValid = checkUsername(username);
             if(isValid) {
-                cout << "Valid" << '\n';
+                cout << "Valid" << e;
             } else {
-                cout << "Invalid" << '\n';
+                cout << "Invalid" << e;
             }
         } catch (BadLengthException e) {
-            cout << "Too short: " << e.what() << '\n';
+            cout << "Too short: " << e.what() << e;
         }
     }
     return 0;
