@@ -1,6 +1,9 @@
-#include <iostream>
+#include <bits/stdc++.h>
 #include <stdexcept>
 using namespace std;
+#define endl "\n"
+#define ll long long
+#define FAST ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 
 int largest_proper_divisor(int n) {
     if (n == 0) {
@@ -16,7 +19,7 @@ int largest_proper_divisor(int n) {
     }
     return -1; 
 }
-void process_input(int n) {
+void sol(int n) {
     try {
         int result = largest_proper_divisor(n);
         cout << "result=" << result << endl;
@@ -27,9 +30,10 @@ void process_input(int n) {
 }
 
 int main() {
+    FAST;
     int n;
     cin >> n;
-    process_input(n);
+    sol(n);
     return 0;
 }
 
