@@ -1,10 +1,9 @@
-#include <cmath>
-#include <cstdio>
-#include <vector>
-#include <iostream>
-#include <algorithm>
+#include <bits/stdc++.h>
 #include <cassert>
 using namespace std;
+#define e "\n"
+#define ll long long
+#define FAST ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 
 class Student {
 private:
@@ -29,6 +28,7 @@ public:
 };
 
 int main() {
+    FAST;
     int n; 
     cin >> n;
     Student *s = new Student[n]; 
@@ -47,7 +47,7 @@ int main() {
         }
     }
 
-    cout << count;
+    cout << count ;
     
     return 0;
 }
