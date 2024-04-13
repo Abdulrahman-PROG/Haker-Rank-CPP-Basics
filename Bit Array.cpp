@@ -1,8 +1,13 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
+#define e "\n"
+#define ll long long
+#define FAST ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
+
 
 int main() {
-    unsigned long long n, s, p, q, r = 0, ans = 0, returned, v;
+    FAST;
+    unsigned ll n, s, p, q, r = 0, ans = 0, returned, v;
     n = 100000000;
     s = 1232077670;
     p = 126810854;
@@ -13,7 +18,7 @@ int main() {
     q = 823906344;
     cin >> n >> s >> p >> q;
 
-    unsigned long long i, a0 = s, a = s, ap = 0, k = 0, kt = 0;
+    unsigned ll i, a0 = s, a = s, ap = 0, k = 0, kt = 0;
 
     v = (1ULL << 31); // 2^31
     for (i = 0; i < n; i++) {
@@ -27,7 +32,7 @@ int main() {
     if (i == n)
         k = i;
 
-    cout << k << endl;
+    cout << k << e;
 
     return 0;
 }
