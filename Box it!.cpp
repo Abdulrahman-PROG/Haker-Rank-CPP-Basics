@@ -1,6 +1,10 @@
-#include<bits/stdc++.h>
-
+#include <bits/stdc++.h>
 using namespace std;
+#define e "\n"
+#define ll long long
+#define FAST ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
+
+
 class Box
 {
     private:
@@ -69,7 +73,7 @@ void check()
         cin>>type;
         if(type ==1)
         {
-            cout<<temp<<endl;
+            cout<<temp<<e;
         }
         if(type == 2)
         {
@@ -77,7 +81,7 @@ void check()
             cin>>l>>b>>h;
             Box NewBox(l,b,h);
             temp=NewBox;
-            cout<<temp<<endl;
+            cout<<temp<<e;
         }
         if(type==3)
         {
@@ -95,12 +99,12 @@ void check()
         }
         if(type==4)
         {
-            cout<<temp.CalculateVolume()<<endl;
+            cout<<temp.CalculateVolume()<<e;
         }
         if(type==5)
         {
             Box NewBox(temp);
-            cout<<NewBox<<endl;
+            cout<<NewBox<<e;
         }
 
     }
@@ -108,5 +112,6 @@ void check()
 
 int main()
 {
+    FAST;
     check();
 }
