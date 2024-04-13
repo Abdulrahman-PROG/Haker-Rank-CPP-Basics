@@ -1,6 +1,8 @@
-#include <iostream>
-#include <deque> 
+#include <bits/stdc++.h>
 using namespace std;
+#define e "\n"
+#define ll long long
+#define FAST ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 
 void printKMax(int arr[], int n, int k) {
     deque<int> q;
@@ -27,11 +29,11 @@ void printKMax(int arr[], int n, int k) {
         q.push_back(i);
     }
 
-    // Print the maximum of the last window
-    cout << arr[q.front()] << endl;
+    cout << arr[q.front()] << e;
 }
 
 int main() {
+    FAST;
     int t;
     cin >> t;
     while(t > 0) {
